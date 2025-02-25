@@ -5,6 +5,11 @@ project(cocoboard
     DESCRIPTION "Keyboard implemented with STM32F411"
     LANGUAGES C CXX)
 
+message("C flags: ${CMAKE_C_FLAGS}")
+message("C++ flags: ${CMAKE_CXX_FLAGS}")
+
 add_executable(cocoboard main.cpp)
-target_link_libraries(cocoboard PRIVATE stdc++)
+
+#TODO: this will have to be added sooner or later.
+#target_link_libraries(cocoboard gcc)
 
