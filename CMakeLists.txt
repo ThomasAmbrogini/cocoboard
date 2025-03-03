@@ -9,6 +9,7 @@ message("C flags: ${CMAKE_C_FLAGS}")
 message("C++ flags: ${CMAKE_CXX_FLAGS}")
 
 add_executable(cocoboard main.cpp)
+target_compile_options(cocoboard PRIVATE "-save-temps")
 
 #TODO: this will have to be added sooner or later.
 #target_link_libraries(cocoboard gcc)
